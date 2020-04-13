@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/interfacenonmpm"
+    tools:context=".AspirationListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/layout1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimary"
+            android:visibility="invisible"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingTop="8dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/layout1"
+        android:id="@+id/layout2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtViewUsername"
+            android:layout_toLeftOf="@id/btnLogout"
+            android:text="Edit Profile"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtViewUsername"
+            android:layout_alignParentEnd="true"
+            android:text="Log Out"
+            android:textSize="16dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/colorPrimary"
+            android:onClick="logout"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:id="@+id/layout3"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtViewUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#000000"
+            android:text="List Aspiration"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout3"
+        android:id="@+id/layout4"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtViewSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtViewUser"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:text="Search : "/>
+
+        <EditText
+            android:id="@+id/txtSearch"
+            android:background="@drawable/txtbox_3"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/txtViewUser"
+            android:maxLength="15"
+            android:paddingLeft="5dp"
+            android:textAlignment="viewStart"
+            android:layout_toRightOf="@id/txtViewSearch"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout4"
+        android:id="@+id/layout5"
+        android:paddingTop="7dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtViewSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:layout_below="@id/txtViewUser"
+            android:layout_toLeftOf="@+id/txtViewSearch"
+            android:text=" Sort :"/>
+
+        <Spinner
+            android:id="@+id/dropdownSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtViewUser"
+            android:layout_toRightOf="@+id/txtViewSort"
+            android:spinnerMode="dropdown"
+            style="@style/spinner_style"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            />
+        <!--        android:entries="@array/Type_arrays"-->
+        <!--        android:prompt="@string/Type_prompt"/>-->
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/aspiration_list"
+        android:layout_below="@+id/layout5"
+        android:layout_width="wrap_content"
+        android:layout_height="160pt"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="20.0sp"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>

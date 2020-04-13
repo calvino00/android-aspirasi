@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/interfacempm"
+tools:context=".AspirationActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    android:id="@+id/layout1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtfill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:text="Please fill the form below"
+        />
+    <TextView
+        android:id="@+id/txtnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:text="NIM" />
+
+    <EditText
+        android:id="@+id/nim_input"
+        android:background="@drawable/txtbox_3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:maxLength="11"
+        android:padding="10dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/txtnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:text="NAME" />
+
+    <EditText
+        android:id="@+id/nama_input"
+        android:background="@drawable/txtbox_3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:maxLength="12"
+        android:padding="10dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/txtkelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:text="CLASS" />
+
+    <EditText
+        android:id="@+id/kelas_input"
+        android:background="@drawable/txtbox_3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:maxLength="5"
+        android:padding="10dp"
+        android:digits="123456789AHLMSITahlmsit"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editkelas"
+        android:layout_marginTop="30dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/custom_button2"
+            android:textColor="#FFFFFF"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btnSubmit_Terakhir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/custom_button1"
+            android:textColor="#FFFFFF"
+            android:text="Submit" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+</RelativeLayout>

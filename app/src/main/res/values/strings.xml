@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">Final_Project_MPM</string>
+
+    <string-array name="jenis_aspirasi">
+        <item>Umum</item>
+        <item>Akademik</item>
+        <item>Non-Akademik</item>
+        <item>Fasilitas</item>
+    </string-array>
+
+    <string-array name="sorting">
+        <item>NIM</item>
+        <item>Nama</item>
+        <item>Kelas</item>
+        <item>Jenis</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
